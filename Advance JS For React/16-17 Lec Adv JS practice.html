@@ -78,7 +78,7 @@
         { name: "company Nine", category: "Retail", start: 1981, end: 1989 },
     ];
 
-    const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
+    const ages = [33, 12, 20, 16, 05, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 
 
@@ -244,8 +244,13 @@
 
     // => Assending Order :- (25, 29, 30)
 
+    const Sortages = ages.sort();
+    console.log(Sortages);
+
     // const Sortages = ages.sort ((a, b) => a-b);
     // console.log(Sortages);
+
+
 
 
     // => Decsending Order :- (81, 80, 79)
@@ -305,12 +310,12 @@
 
     // * Combine Method :-
 
-    const combined = ages.map(age => age * 2)
-        .filter(age => age >= 40)
-        .sort((a, b) => a - b)
-        .reduce((a, b) => a + b, 0);
+    // const combined = ages.map(age => age * 2)
+    //     .filter(age => age >= 40)
+    //     .sort((a, b) => a - b)
+    //     .reduce((a, b) => a + b, 0);
 
-    console.log(combined);
+    // console.log(combined);
 
 
 </script>
