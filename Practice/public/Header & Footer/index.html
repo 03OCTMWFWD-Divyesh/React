@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Header & Footer Using React DOM (25-05-23)</title>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div id="root"></div>
+
+
+    <script type="text/jsx">
+        const root = ReactDOM.createRoot(
+            document.getElementById('root')
+        );
+        const element =
+
+       <header id="hed">
+            <div className="hed-wr">
+                <div className="container">
+                    <div className="navbar">
+                        <div className="logo">
+                            <span>K</span>ING
+                        </div>
+                        <nav className="list">
+                            <ul className="navmenu">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Product</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+       </header>
+
+        root.render(element);
+    </script>
+</body>
+
+</html>
+
+
+
+<!-- <header id="hed">
+    <div className="navbar">
+        <div className="logo">
+            <span>K</span>ING
+        </div>
+        <nav className="list">
+            <ul className="navmenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header> -->
