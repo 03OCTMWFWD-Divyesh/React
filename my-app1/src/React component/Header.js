@@ -24,7 +24,6 @@ function Header() {
           </div>
         </div>
       </header>
-      <img src="G:\Github\React\my-app1\Image\virat_kohli_2.jpg" alt=""></img>
     </>
   )
 }
