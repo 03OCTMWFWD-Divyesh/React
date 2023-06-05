@@ -1,9 +1,12 @@
 import React from "react";
 import './App.css';
 
-function App (){
+const App = () => {
   return (
-    <div><h1>Hello React</h1></div>
+    <div>
+      <label htmlFor="text">Name</label> <br />
+      <input type="text" placeholder="King" required pattern=""/>
+    </div>
   )
 }
 

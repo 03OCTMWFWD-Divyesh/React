@@ -5,10 +5,21 @@ body{
 div{
   font-size: 50px;
   text-align: center;
+  margin: 40px 0px 0px 0px;
   /* margin: 0 auto; */
 }
 
 div:hover{
   color: white;
   transform: scale(1.1);
+}
+input{
+  padding: 10px 0px 10px 0px;
+  border: 2px solid red;
+  border-radius: 10px;
+  font-size: 30px;
+  text-align: center;
+  color: red;
+  background-color: black;
+  margin: 40px 0px 0px 0px;
 }
