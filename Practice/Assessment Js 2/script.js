@@ -111,8 +111,76 @@
 
 
 
-// (Q-6) Given two strings, return true if they one anagrams of one another ?
+// (Q-7) Given two strings, return true if they one anagrams of one another ?
 // problem : Mary is an anagram of army.
 
+// var firstword = "Mary";
+// var secondword = "Army";
+
+// isAnagram (firstword.secondword);       // true
+
+// function isAnagram(first, second){
+//     var a = first.toLowerCase();
+//     var b = second.toLowerCase();
+
+//     a = a.split ("").sort().join ("");
+//     b = b.split ("").sort().join ("");
+//     return a === b;
+// }
 
 
+
+
+
+
+// (Q-8) What will be the output of the following code ?
+// problem :
+            // var y = 1;
+            // if(function f (){}){
+            //     y += typeof f;
+            // }
+            // console.log(y);
+
+
+// var k = 1;
+// if (1){
+//     eval (function foo(){});
+//     k += typeof foo;
+// }
+// console.log(k);
+
+// var k = 1;
+// if (1){
+//     function foo(){};
+//     k += typeof foo;
+// }
+// console.log(k);                 // output :- 1function.
+
+
+
+
+
+// (Q-9) What will the following code output ?
+// problem :
+            // (function(){
+            //     var a = b = 5;
+            // }) ();
+            // console.log(b);
+
+
+// var a = b = 5;
+// var a = b;
+// b = 5;
+
+
+
+
+// (Q-10) Write a function that would allow you to do this.
+// Multiply (5) (6);
+
+function Multiply (a){
+    return function (b){
+        return a * b;
+    }
+}
+Multiply (5)(6);
