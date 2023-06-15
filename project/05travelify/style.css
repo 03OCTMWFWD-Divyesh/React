@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    font-family: sans-serif;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+}
+.col-65{
+    width: 65%;
+}
+.col-35{
+    width: 35%;
+}
+.jst-ct-bt{
+    justify-content: space-between;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #57ad68;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+body{
+    background: url(images/background.png);
+    border-top: 6px solid #57ad68;
+}
+.topnav{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-top: 15px;
+    padding: 40px 20px;
+}
+.topnav h2{
+    color: #57ad68;
+    font-size: 35px;
+    font-weight: lighter;
+}
+.topnav p{
+    color: grey;
+}
+.topnav .sociallinks{
+    color: gray;
+    font-size: 20px;
+    padding: 0 20px;
+}
+.navlinks ul{
+    display: flex;
+    list-style-type: none;
+    background-color: #57ad68;
+}
+.navlinks a{
+    display: block;
+    padding: 15px;
+    /* text-decoration: none; */
+    color: white;
+    font-size: 15px;
+}
+main{
+    background: url(images/mainbackground.jpg)center center/cover;
+    height: 450px;
+    position: relative;
+}
+.maintext{
+    color: white;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 20px 20px 100px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+.maintext h2{
+    padding-bottom: 20px;
+}
+#main-section{
+    background-color: rgb(240, 236, 236);
+}
+#main-section .box{
+    padding: 25px;
+    background: #fff;
+}
+#main-section h2{
+    font-weight: lighter;
+    padding-top: 20px;
+    font-size: 30px;
+    color: black;
+}
+.para{
+    font-size: 15px;
+    padding: 30px 0;
+    line-height: 25px;
+}
+.sec-foot{
+    line-height: 20px;
+    padding: 10px 5px 45px 10px;
+    font-size: 13px;
+    background-color: rgb(236, 232, 232);
+    border-bottom: 5px solid #57ad68;
+}
+.box button{
+    border: none;
+    float: right;
+    margin: 5px 0;
+    padding: 8px 15px;
+    background-color: #57ad68;
+    color: white;
+}
+button a{
+    color: white;
+}
+hr{
+    width: 95%;
+    margin:  0 auto;
+    border: 1px dashed lightgray;
+}
+
+.foot-box{
+    padding: 50px 20px;
+    background-color: rgb(240, 236, 236);
+}
+.foot-box button{
+    padding: 10px 20px;
+}
+#footer{
+    padding: 30px;
+    background: rgb(240, 236, 236);
+    font-size: 12px;
+}
+.side{
+    background-color: white;
+    margin: 0 20px 20px 20px;
+    padding: 20px 20px;
+    list-style-image: url(images/arrow-right.png);
+    list-style-position: inside;
+}
+.side h3{
+    padding: 10px 0;
+}
+.side a{
+    color: #57ad68;
+    line-height: 25px;
+    font-size: 13px;
+}
+

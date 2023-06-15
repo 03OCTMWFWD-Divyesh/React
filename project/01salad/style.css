@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.header{
+    background-color: rgb(118, 240, 133);
+}
+.navlogo img{
+    width: 180px;
+	height: 67px;
+    align-items: center;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li a:hover{
+	color:rgb(255, 141, 54); 
+	transition: 0.6s;
+}
+.nav-list{
+    display: flex;
+    list-style-type: none;
+}
+.nav-list a{
+    padding: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.dropbase{
+    display:none; 
+	position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+li{
+    padding-bottom: 10px;
+}
+.dropbox:hover .dropbase{
+    display: block;
+}
+main h1{
+    font-size: 70px;
+    padding-top: 80px;
+    font-weight: lighter;    
+}
+h1 span{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main p{
+    font-size: 20px;
+    margin: 50px 130px 50px 0;
+    line-height: 30px;
+}
+main img{
+    animation: rotationimg 10s infinite linear;
+	/* animation-duration: 2s; */
+	/* animation-timing-function: ease-out; */
+	/* animation-fill-mode: forwards; */
+	/* animation-iteration-count:  infinite linear; */
+	/* transition: all; */
+}
+@keyframes rotationimg{
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(360deg);}
+}
+
+main button{
+    background-color: darkorange;
+    color: white;
+    padding: 18px 40px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 110px;
+    
+}
+button:hover {
+	background-color: rgb(65, 157, 65);
+	transition: 0.9s;
+	
+}
+
+.col-50{
+    width: 50%;
+}
+.col-50 img{
+    position: relative;
+    left: 60px;
+    top: 60px;
+
+}
+.row{
+    display: flex;
+}
+.sec2{
+    padding-left: 50px;
+}
+#section2{
+    position: relative;
+}
+#section2 img{
+    border: 5px solid white;
+    border-radius: 10px;
+}
+#image1{
+    position: absolute;
+    top: 100px;
+}
+#image2{
+    position: absolute;
+    top: 200px;
+    left: 250px;
+}
+#section2 h3{
+    margin-top: 120px;
+    font-size: 25px;
+    font-weight: lighter;
+}
+#section2 h2{
+    font-size: 45px;
+    padding: 20px 0;
+}
+.sec2 span{
+    color: darkorange;
+}
+.pera{
+    font-size: 25px;
+}
+#sign{
+   margin: 0 0 0 -55px;
+}
+#section2 p{
+    line-height: 30px;
+    padding: 10px 0;
+    margin-right: 20px;
+}
+
+.sec3{
+    gap: 30px;
+    margin-bottom: 100px;
+    
+}
+.sec3 .col-33{
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+}
+#section3 h2{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    padding: 30px;
+}
+#section3 span{
+    color:darkorange ;
+}
+.sec3 img{
+    border: 5px solid white;
+    border-radius: 200px;
+}
+.sec3 h3{
+    font-size: 30px;
+    padding: 20px 0;
+}
+.sec3 p{
+    line-height: 30px;
+    font-size: 20px;
+}
+#section4{
+    background-color: rgb(113, 248, 171);
+    position: relative;
+    padding: 30px 0;
+}
+
+#section4 h2{
+    font-size: 45px;
+    padding: 100px 0 20px 0;
+}
+#section4 span{
+    color: darkorange;
+    font-weight: lighter;
+}
+#section4 p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 206px;
+    letter-spacing: 0.5px;
+    
+}
+#section4 .sp{
+    padding-right: 60px;
+
+}
+#section4 button{
+    background-color: darkorange;
+    color: white;
+    padding: 18px 40px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 50px 0 80px 0;
+}
+#section4 button:hover{
+    background-color: rgb(65, 157, 65);
+	transition: 0.9s;
+}
+.second{
+    padding: 50px 0;
+}
+.logo{
+    font-size: 40px;
+    color: darkorange;
+}
+#sec4img{
+    position: absolute;
+    top: -40px;
+    right: 0;
+}
+#section5{
+    margin-top: 100px;
+    margin-bottom: 50px;
+   
+}
+.second{
+    padding: 50px 0;
+}
+.logo{
+    font-size: 40px;
+    color: darkorange;
+}
+#section5 h2{
+    display: inline-block;
+    padding: 10px 20px;
+}
+#section5 p{
+    font-size: 20px;
+    margin: 0 80px 0 55px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+}
+#section6 h2{
+    padding-top: 120px;
+    font-size: 45px;
+}
+#section6 span{
+    color: darkorange;
+    font-weight: lighter;
+}
+#section6 p{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    margin-right: 120px;
+    padding: 10px 0;
+}
+#section6 button{
+    background-color: darkorange;
+    color: white;
+    padding: 18px 40px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 20px;
+}
+#section6 button:hover{
+    background-color: rgb(65, 157, 65);
+	transition: 0.9s;
+}
+#section7 .row{
+    gap: 30px;
+}
+#section7{
+    background-color: rgb(113, 248, 171);
+}
+.mark{
+    padding-top: 100px;
+}
+#section7 p{
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    margin: 20px 20px 20px 0px;
+}
+/* .testi{
+    border-radius: 100px;
+    width: 30%;
+    margin: 40px 0px;
+} */
+#footer .center{
+    margin: 100px 250px;
+    text-align: center;
+}
+.center h2{
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+.center input{
+    padding: 18px;
+    font-size: 15px;
+    width: 70%;
+    border: 1px solid lightgray;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.center button{
+    border: none;
+    padding: 18px 40px;
+    background-color: darkorange;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+#footer .center{
+    margin: 100px 250px;
+    text-align: center;
+}
+.center h2{
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+.center input{
+    padding: 18px;
+    font-size: 15px;
+    width: 70%;
+    border: 1px solid lightgray;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.center button{
+    border: none;
+    padding: 18px 40px;
+    background-color: darkorange;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.center button:hover{
+    background-color: rgb(65, 157, 65);
+	transition: 0.9s;
+}
+#footer h4{
+    font-size:20px;
+    padding: 20px 0;
+}
+#footer p{
+    font-size: 20px;
+    line-height: 25px;
+    margin-right: 40px;
+}
+#footer ul li{
+    list-style-image: url(images/right_arrow.png);
+    list-style-position: inside;
+    padding: 10px 150px 10px 0;
+    font-size: 20px;
+    line-height: 25px;
+}
+#credits{
+    padding: 60px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
