@@ -10,18 +10,18 @@
 
 
 
-// import React from "react";
-// import PostList from "./component/PostList";
+import React from "react";
+import PostList from "./component/PostList";
 
-// function App (){
-//     return (
-//         <div>
-//             <PostList />
-//         </div>
-//     )
-// }
+function App (){
+    return (
+        <div>
+            <PostList />
+        </div>
+    )
+}
 
-// export default App;
+export default App;
 
 
 
@@ -88,43 +88,43 @@
 
 // (3) Number :-
 
-import React from "react";
-import { useState } from "react";
+// import React from "react";
+// import { useState } from "react";
 
-function App (){
-    const [name, setName] = useState ("King-Kohli");
-    const [flag, setFlag] = useState (false);
-    const [step, setStep] = useState (0);
+// function App (){
+//     const [name, setName] = useState ("King-Kohli");
+//     const [flag, setFlag] = useState (false);
+//     const [step, setStep] = useState (0);
 
-    function changeName (){
-        console.log("You have clicked the function");
-        setName ("Virat-kohli");
-        setFlag (!flag);
-    }
+//     function changeName (){
+//         console.log("You have clicked the function");
+//         setName ("Virat-kohli");
+//         setFlag (!flag);
+//     }
 
-    function increment (){
-        // return setStep (step + 1);
+//     function increment (){
+//         // return setStep (step + 1);
 
-        setStep ((plus) => plus + 2);
-        setStep ((plus) => plus + 1);
+//         setStep ((plus) => plus + 2);
+//         setStep ((plus) => plus + 1);
 
-    }
+//     }
 
-    function decrement (){
-        // return setStep (step - 1);
+//     function decrement (){
+//         // return setStep (step - 1);
 
-        setStep ((minus) => minus - 1);
-        setStep ((minus) => minus - 1);
-    }
+//         setStep ((minus) => minus - 1);
+//         setStep ((minus) => minus - 1);
+//     }
 
-    return (
-        <div className="div">Hello {flag ? name : ""}
-        <div><button onClick={changeName}>Clicked</button></div>
-        <hr />
-        <div><button onClick={increment}>+</button></div>
-        <p>{step}</p>
-        <div><button onClick={decrement}>-</button></div>
-        </div>
-    )
-}
-export default App;
+//     return (
+//         <div className="div">Hello {flag ? name : ""}
+//         <div><button onClick={changeName}>Clicked</button></div>
+//         <hr />
+//         <div><button onClick={increment}>+</button></div>
+//         <p>{step}</p>
+//         <div><button onClick={decrement}>-</button></div>
+//         </div>
+//     )
+// }
+// export default App;
