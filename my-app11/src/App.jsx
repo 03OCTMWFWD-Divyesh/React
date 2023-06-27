@@ -14,7 +14,7 @@ function initialvalue() {
 };
 
 function App() {
-    const [name, setName] = useState("18");
+    const [name, setName] = useState("");
     const [flag, setFlag] = useState(false);
     // const [step, setStep] = useState(0);
     const [step, setStep] = useState(initialvalue());
@@ -34,7 +34,7 @@ function App() {
         return setStep(step - 1);
     };
 
-    function addNames() {
+    function addNames(e) {
         e.preventDefault();
         setNames([...names, { id: names.length, name }]);                       // ... => Spread operator.
         setName("");
@@ -42,7 +42,7 @@ function App() {
 
     return (
         <div>
-            <div>Hello, {flag ? name : "king"}</div>
+            <div>Hello, {flag ? name : ""}</div>
             <button onClick={changeName}>Clicked</button>
             <hr />
             <button onClick={increment}> + </button>
@@ -51,15 +51,15 @@ function App() {
 
 
             <form action="" onSubmit={addNames}>
-                <input type="text" placeholder="addArray" onChange={(e) => setName(e.target.value)} />
+                <input type="text" placeholder="Add Array" onChange={(e) => setName(e.target.value)} />
                 <button>Submit</button>
             </form>
             <hr />
 
             <ul>
-                {names.map((item) => {
+                {names.map((item) => (
                     <li key={item.id}>{item.name}</li>              // Todo List.
-                })}
+                ))}
             </ul>
         </div>
     );
