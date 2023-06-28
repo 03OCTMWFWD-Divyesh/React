@@ -1,5 +1,5 @@
 import React from 'react';
-import useEffect from './useEffectCompo';
+import UseEffects from './useEffectCompo/useEffect';
 import { useState } from 'react';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
             <div>
                 <button onClick={() => setFlag(!flag)}>Functional component with Toogle</button>
             </div>
-            {flag ? <useEffect />  : ""}
+            {flag ? <UseEffects />  : "king"}
         </div>
     );
 };
