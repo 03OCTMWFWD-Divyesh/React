@@ -9,7 +9,7 @@ function App() {
             <div>
                 <button onClick={() => setFlag(!flag)}>Functional component with Toogle</button>
             </div>
-            {flag ? <UseEffects />  : "king"}
+            {flag ? <UseEffects />  : ""}
         </div>
     );
 };
