@@ -4,7 +4,8 @@ import { useState, useMemo } from "react";
 function Memo (){
     const [myNumber, setNumber] = useState (1);
     const [value, setValue] = useState (0);
-    const factOfNumber = factorialOf (myNumber);
+    const factOfNumber = useMemo (() => factorialOf (myNumber), [myNumber]);
+    // const factOfNumber = factorialOf (myNumber);
 
     const onChange = (event) => {
         setNumber (Number (event.target.value));

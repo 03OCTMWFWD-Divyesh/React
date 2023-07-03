@@ -1,58 +1,46 @@
-
-import './App.css';
+import React from 'react';
+import { usecallback, useMemo, useState } from "react";
+import List from './component/List';
 
 function App() {
-  return (
-    <div className="App">
-      <div className="App-header">
-        <h1>Hello React</h1>
-        <Virat />
-      </div>
-    </div>
-  );
-}
+    const [number, setNumber] = useState(1);
+    const [dark, setDark] = useState(false);
+
+    // const getItem = () => {
+    //     return [number, number + 1, number + 2];
+    // }
 
 
-
-function Virat(){
-  return(
-    <div className='App'>
-      <div className='App-header'>
-        <ul>
-          <li>king kohli</li>
-        </ul>
-      </div>
-    </div>
-  )
-}
-
-// function vk(){
-//   let nm = "King";
-//   return(
-//     <div className="App">
-//       <div className='App-header'>
-//         Hello {nm}
-//       </div>
-//     </div>
-//   )
-// }
+    // const getItem = usecallback(() => {
+    //     return [number, number + 1, number + 2];
+    // }, [number]);
 
 
-
-// function dk(){
-//   let nm = "fruites";
-//   let className = "App-header"
-//   return(
-//     <div className="App">
-//       <div className={className}>
-//         Hyy {nm}
-//       </div>
-//     </div>
-//   )
-// }
+    // const getItem = useMemo (() => {
+    //     return [number, number+1, number+2];
+    // }, [number]);
 
 
+    const getItem = usecallback ((increment) => {
+        return [number+increment, number+1+increment, number+2+increment];
+    }, [number]);
+
+
+    const theme = {
+        backgroundcolor: dark ? '#333' : '#fff',
+        color: dark ? '#fff' : '#333'
+    };
+
+
+    return (
+        <div className='App'>
+            <div style={theme}>
+                <input type='number' value={number} onChange={e => setNumber(parseInt(e.target.value))} />
+                <button onClick={() => setDark(prevDark => !prevDark)}>Theme Change</button>
+                <List getItems={getItem} />
+            </div>
+        </div>
+    );
+};
 
 export default App;
-// export default vk;
-// export default virat;
