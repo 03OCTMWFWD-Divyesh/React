@@ -9,7 +9,6 @@ import './App.css';
 import { ErrorBoundary } from 'react-error-boundary';
 import ErrorFallback from './ErrorBoundry';
 
-// All module files of admin and user are shown with lazy loading
 const Home = React.lazy(() => import("./Home"));
 const AdminProfile = React.lazy(() => import("./Module/Admin/AdminProfile"));
 const UserProfile = React.lazy(() => import("./Module/User/UserProfile"));
